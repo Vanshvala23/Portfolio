@@ -1,3 +1,7 @@
+# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)]
+
+
+
 ## Table of Contents
 - [Sections](#sections)
 - [Getting Started](#getting-started)
