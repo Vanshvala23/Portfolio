@@ -23,7 +23,7 @@ const greeting = {
   username: "Vansh Vala",
   title: "Hi all, I'm Vansh",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Web Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -127,7 +127,7 @@ const techStack = {
   experience: [
     {
       Stack: "Cyber-Security",
-      progressPercentage: "15%"
+      progressPercentage: "45%"
     },
     {
       Stack: "Backend",
@@ -147,11 +147,11 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Front-End Developer",
-      company: "Discord Developer",
-      companylogo: require("./assets/images/OIP.jpg"),
-      date: "March 2024 – Arpil 2024",
-      desc: "Discord chat developer using Discord.js."
+      role: "Full Stack developer",
+      company: "MrLoggage",
+      companylogo: require('./assets/images/Mr Loggage[1].png'),
+      date: "June 2024 – August 2024",
+      desc: "Web Developer and Server side developer"
     },
   ]
 };
