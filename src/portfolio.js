@@ -115,7 +115,7 @@ const educationInfo = {
       logo: require("./assets/images/Parul-Logo.jpeg"),
       subHeader: "Currently pursuing Bachelors in Computer Science and Engineering",
       duration: "June 2022 - April 2026",
-      desc: "Participated in the Hackathon and CDC Events.",
+      desc: "Participated in the Hackathon and other Events.",
     }
   ]
 };
@@ -150,7 +150,7 @@ const workExperiences = {
       role: "Full Stack developer",
       company: "MrLoggage",
       companylogo: require('./assets/images/Mr Loggage[1].png'),
-      date: "June 2024 – August 2024",
+      date: "June 2024 – August 2026",
       desc: "Web Developer and Server side developer"
     },
   ]
