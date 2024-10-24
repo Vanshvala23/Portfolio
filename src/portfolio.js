@@ -222,7 +222,7 @@ const achievementSection = {
     {
       title:'Award Letter from MrLoggage',
       subtitle: "Award Letter from MrLoggage",
-      image: require("./assets/images/MrLoggage[1].png"),
+      image: require('./assets/images/Mr Loggage[1].png'),
       imageAlt: "MrLoggage",
       footerLink:[
         {
