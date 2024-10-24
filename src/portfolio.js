@@ -235,6 +235,30 @@ const achievementSection = {
         }
       ]
     },
+    {
+      title:"Vadodara Hackathon 5.0",
+      subtitle: "Participated in Vadodara Hackathon 5.0 and selected for Institute level of SIH 2024",
+      image: require("./assets/images/Hackathon.png"),
+      imageAlt: "Vadodara Hackathon 5.0",
+      footerLink:[
+        {
+          name: "Participation Certificate",
+          url: "https://www.linkedin.com/posts/vansh-vala_certificate-of-participation-activity-7247129731400163330-k6Cs?utm_source=share&utm_medium=member_desktop",
+        }
+      ]
+    },
+    {
+      title:'MERN Stack Certificate',
+      subtitle: "Completed the MERN Stack course from SkillUp and I am proud of myself.",
+      image: require("./assets/images/mern.jpeg"),
+      imageAlt: "MERN Stack Certificate",
+      footerLink:[
+        {
+          name: "Certification",
+          url: "https://www.linkedin.com/posts/vansh-vala_certified-full-stack-mern-developer-activity-7254144780895457280-MoJ5?utm_source=share&utm_medium=member_desktop"
+        }
+      ]
+    },
     // {
     //   title: "Discord Developer",
     //   subtitle:
