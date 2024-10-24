@@ -214,25 +214,21 @@ const achievementSection = {
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_certificate-activity-7148314441107894272-2kRO?utm_source=share&utm_medium=member_desktop"
-        },
-        {
-          name:"Certification of MERN Stack",
-          url:'https://www.linkedin.com/posts/vansh-vala_certified-full-stack-mern-developer-activity-7254144780895457280-MoJ5?utm_source=share&utm_medium=member_desktop'
-        },
-        {
-          name:'Certification of Hackathon',
-          url:'https://www.linkedin.com/posts/vansh-vala_certificate-of-participation-activity-7247129731400163330-k6Cs?utm_source=share&utm_medium=member_desktop'
-        },
-        {
-          name: "Award Letter",
-          url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_certificate-activity-7148314441107894272-2kRO?utm_source=share&utm_medium=member_desktop"
-        },
-        {
           name: "DBMS Certificate",
           url: "https://www.linkedin.com/posts/vansh-vala_certificate-activity-7148314441107894272-sxXC?utm_source=share&utm_medium=member_desktop"
         }
+      ]
+    },
+    {
+      title:'Award Letter from MrLoggage',
+      subtitle: "Award Letter from MrLoggage",
+      image: require("./assets/images/MrLoggage[1].png"),
+      imageAlt: "MrLoggage",
+      footerLink:[
+        {
+          name: "Award Letter",
+          url: "https://www.linkedin.com/posts/vansh-vala_internship-mrloggage-careergrowth-activity-7212136237246083074-9dll?utm_source=share&utm_medium=member_desktop"
+        },
       ]
     },
     {
