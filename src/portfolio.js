@@ -131,11 +131,11 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     },
     {
       Stack: "Frontend",
-      progressPercentage: "60%"
+      progressPercentage: "85%"
     }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -218,42 +218,50 @@ const achievementSection = {
           url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_certificate-activity-7148314441107894272-2kRO?utm_source=share&utm_medium=member_desktop"
         },
         {
+          name:"Certification of MERN Stack",
+          url:'https://www.linkedin.com/posts/vansh-vala_certified-full-stack-mern-developer-activity-7254144780895457280-MoJ5?utm_source=share&utm_medium=member_desktop'
+        },
+        {
+          name:'Certification of Hackathon',
+          url:'https://www.linkedin.com/posts/vansh-vala_certificate-of-participation-activity-7247129731400163330-k6Cs?utm_source=share&utm_medium=member_desktop'
+        },
+        {
           name: "Award Letter",
           url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_certificate-activity-7148314441107894272-2kRO?utm_source=share&utm_medium=member_desktop"
         },
         {
           name: "DBMS Certificate",
-          url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_certificate-activity-7148314441107894272-2kRO?utm_source=share&utm_medium=member_desktop"
+          url: "https://www.linkedin.com/posts/vansh-vala_certificate-activity-7148314441107894272-sxXC?utm_source=share&utm_medium=member_desktop"
         }
       ]
     },
-    {
-      title: "Discord Developer",
-      subtitle:
-        "Developed a Discord chat bot that can talk with him and added an admin system.",
-      image: require("./assets/images/Discord.png"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Discord Developer project",
-          url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_explainations-activity-7152620765664706560-j4Cp?utm_source=share&utm_medium=member_desktop"
-        }
-      ]
-    },
+    // {
+    //   title: "Discord Developer",
+    //   subtitle:
+    //     "Developed a Discord chat bot that can talk with him and added an admin system.",
+    //   image: require("./assets/images/Discord.png"),
+    //   imageAlt: "Google Assistant Action Logo",
+    //   footerLink: [
+    //     {
+    //       name: "View Discord Developer project",
+    //       url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_explainations-activity-7152620765664706560-j4Cp?utm_source=share&utm_medium=member_desktop"
+    //     }
+    //   ]
+    // },
 
-    {
-      title: "Discord Music app Developer ",
-      subtitle: "Completed a Music developer from Discord",
-      image: require("./assets/images/Discord.png"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_explainations-activity-7152620765664706560-j4Cp?utm_source=share&utm_medium=member_desktop"
-        }
-      ]
-    }
+    // {
+    //   title: "Discord Music app Developer ",
+    //   subtitle: "Completed a Music developer from Discord",
+    //   image: require("./assets/images/Discord.png"),
+    //   imageAlt: "PWA Logo",
+    //   footerLink: [
+    //     {name: "Certification", url: ""},
+    //     {
+    //       name: "Final Project",
+    //       url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_explainations-activity-7152620765664706560-j4Cp?utm_source=share&utm_medium=member_desktop"
+    //     }
+    //   ]
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
