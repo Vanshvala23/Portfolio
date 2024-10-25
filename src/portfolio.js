@@ -244,6 +244,18 @@ const achievementSection = {
       ]
     },
     {
+      title:'NEP Debate Competition',
+      subtitle: "Participated in NEP Debate Competition and won the 2nd position.",
+      image:require('./assets/images/Parul-Logo.jpeg'),
+      imageAlt: "NEP Debate Competition",
+      footerLink:[
+        {
+          name: "Certificate",
+          url: "https://www.linkedin.com/posts/vansh-vala_debate-completition-certificate-activity-7255483180948828161-OuY9?utm_source=share&utm_medium=member_desktop"
+        }
+      ]
+    },
+    {
       title:'MERN Stack Certificate',
       subtitle: "Completed the MERN Stack course from SkillUp and I am proud of myself.",
       image: require("./assets/images/mern.jpeg"),
