@@ -367,7 +367,6 @@ const contactInfo = {
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+91 9825021852",
   email_address: "vanshvala01@gmail.com",
-
 };
 
 // Twitter Section
@@ -394,7 +393,7 @@ export {
   blogSection,
   talkSection,
   podcastSection,
-  contactInfo,
   twitterDetails,
-  isHireable
+  isHireable,
+  contactInfo,
 };

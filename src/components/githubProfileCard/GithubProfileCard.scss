@@ -5,14 +5,14 @@
   border: 0.5rem solid $githubProfileCardBorder;
   margin-left: auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 200px;
   height: auto;
   box-shadow: $lightBoxShadow 0 30px 30px -30px;
   transition: all 0.3s ease-out;
 }
 
 .profile-image:hover {
-  box-shadow: none;
+  box-shadow: $lightBoxShadow 0 50px 50px -50px;
 }
 
 .prof-title {
