@@ -3,7 +3,7 @@ const https = require("https");
 const process=require('process');
 require('dotenv').config()
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "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";  // If you are using a token, provide it here, or leave it empty if not needed.
+const GITHUB_TOKEN = process.env.TOKEN || "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";  // If you are using a token, provide it here, or leave it empty if not needed.
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME||"Vanshvala23";  // Only the username, not the full URL
 const ERR = {
   noUserName:
