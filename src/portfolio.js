@@ -5,6 +5,11 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
+// import { RiFirebaseFill } from "react-icons/ri";
+// import { FaGithub } from "react-icons/fa";
+// import { RiTailwindCssFill } from "react-icons/ri";
+// import { SiKotlin } from "react-icons/si";
+
 // Splash Screen
 
 const splashScreen = {
@@ -46,6 +51,7 @@ const socialMediaLinks = {
 
 // Skills Section
 
+// Skills Section
 const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
@@ -57,49 +63,50 @@ const skillsSection = {
     emoji("🔥 Event Handler of LeetCode with my buddies."),
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Tailwindcss",
+      fontAwesomeClassname: "fas fa-paint-brush"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
+      skillName: "ReactJS",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "NodeJS",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "npm",
+      skillName: "NPM",
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL Database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "Discord",
       fontAwesomeClassname: "fab fa-discord"
+    },
+    {
+      skillName: "Firebase",
+      fontAwesomeClassname:"fas fa-fire"
+    },
+    {
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Android",
+      fontAwesomeClassname: "fab fa-android"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -150,7 +157,7 @@ const workExperiences = {
       role: "Full Stack developer",
       company: "MrLoggage",
       companylogo: require('./assets/images/Mr Loggage[1].png'),
-      date: "June 2024 – August 2026",
+      date: "June 2024 – Present",
       desc: "Web Developer and Server side developer"
     },
   ]
