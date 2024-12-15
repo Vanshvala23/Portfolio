@@ -2,7 +2,7 @@ import React from "react";
 import "./GithubProfileCard.scss";
 import {contactInfo} from "../../portfolio";
 import emoji from "react-easy-emoji";
-import {Fade} from 'react-reveal';
+import {Fade} from "react-reveal";
 
 export default function GithubProfileCard({prof}) {
   return (

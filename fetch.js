@@ -1,8 +1,8 @@
 const fs = require("fs");
 const https = require("https");
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "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";  // If you are using a token, provide it here, or leave it empty if not needed.
-const GITHUB_USERNAME = process.env.GITHUB_USERNAME || "VanshVala23";  // Only the username, not the full URL
+const GITHUB_TOKEN = "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";  // If you are using a token, provide it here, or leave it empty if not needed.
+const GITHUB_USERNAME = "Vanshvala23";  // Only the username, not the full URL
 const ERR = {
   noUserName:
     "Github Username was found to be undefined. Please set all relevant environment variables.",
@@ -24,8 +24,7 @@ const data = JSON.stringify({
       bio
       avatarUrl
       location
-      pinnedItems(first: 6, types: [REPOSITORY]) {
-        totalCount
+      pinnedItems(first: 6) {
         edges {
           node {
             ... on Repository {
@@ -49,6 +48,7 @@ const data = JSON.stringify({
     }
   }`
 });
+
 
 const default_options = {
   hostname: "api.github.com",
