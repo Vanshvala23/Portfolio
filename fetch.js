@@ -1,8 +1,7 @@
-require("dotenv").config();
 const fs = require("fs");
 const https = require("https");
 
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "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";
 const GITHUB_USERNAME = 'VanshVala23';
 
 const ERR = {
