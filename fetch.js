@@ -1,15 +1,18 @@
 const fs = require("fs");
 const https = require("https");
 
-const GITHUB_TOKEN = "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";
-const GITHUB_USERNAME = 'VanshVala23';
-
+const GITHUB_TOKEN = "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";  // If you are using a token, provide it here, or leave it empty if not needed.
+const GITHUB_USERNAME = "Vanshvala23";  // Only the username, not the full URL
 const ERR = {
-  noUserName: "Github Username or Token is missing in environment variables.",
-  requestFailed: "The request to GitHub didn't succeed."
+  noUserName:
+    "Github Username was found to be undefined. Please set all relevant environment variables.",
+  requestFailed:
+    "The request to GitHub didn't succeed. Check if GitHub username in your .env file is correct.",
+  requestFailedMedium:
+    "The request to Medium didn't succeed. Check if Medium username in your .env file is correct."
 };
 
-if (!GITHUB_TOKEN || !GITHUB_USERNAME) {
+if (!GITHUB_USERNAME) {
   throw new Error(ERR.noUserName);
 }
 
@@ -62,26 +65,24 @@ const req = https.request(default_options, res => {
   let responseData = "";
 
   console.log(`statusCode: ${res.statusCode}`);
+  if (res.statusCode !== 200) {
+    throw new Error(ERR.requestFailed);
+  }
 
   res.on("data", d => {
     responseData += d;
   });
 
   res.on("end", () => {
-    if (res.statusCode === 200) {
-      fs.writeFile("./public/profile.json", responseData, err => {
-        if (err) return console.error("Error writing file:", err);
-        console.log("Saved file to public/profile.json");
-      });
-    } else {
-      console.error(`GitHub API Error. Status code: ${res.statusCode}`);
-      console.error("Response:", responseData);
-    }
+    fs.writeFile("./public/profile.json", responseData, function (err) {
+      if (err) return console.log(err);
+      console.log("saved file to public/profile.json");
+    });
   });
 });
 
 req.on("error", error => {
-  console.error("Request Error:", error.message);
+  throw error;
 });
 
 req.write(data);
