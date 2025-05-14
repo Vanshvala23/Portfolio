@@ -31,7 +31,7 @@ const greeting = {
     "A passionate Full Stack Web Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1mbHbatD_XjrfSkqaH09V1Temw-IwZb3Y/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -157,7 +157,7 @@ const workExperiences = {
       role: "Full Stack developer",
       company: "MrLoggage",
       companylogo: require('./assets/images/Mr Loggage[1].png'),
-      date: "June 2024 – Present",
+      date: "June 2024 – Aug 2025",
       desc: "Web Developer and Server side developer"
     },
   ]
@@ -372,11 +372,11 @@ const contactInfo = {
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  userName: "@vala_vansh", //Replace "twitter" with your twitter username without @
+  display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
