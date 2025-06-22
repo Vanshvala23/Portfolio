@@ -361,6 +361,11 @@ const podcastSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
+const codeforcesCard={
+  display:true,
+  handles:['VanshVala']
+};
+
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
@@ -395,5 +400,6 @@ export {
   podcastSection,
   twitterDetails,
   isHireable,
+  codeforcesCard,
   contactInfo,
 };
