@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { codeforcesCard } from '../../portfolio'; // ✅ Ensure this is correctly exported
-// import './card.scss'; // Optional additional styling
 
 const rankColors = {
   newbie: 'bg-gray-500',
@@ -16,6 +13,8 @@ const rankColors = {
   'legendary grandmaster': 'bg-pink-600',
 };
 
+const CODEFORCES_USERNAME = 'Vanshvala23';
+
 const CodeforcesCard = () => {
   const [userInfo, setUserInfo] = useState(null);
   const [solvedCount, setSolvedCount] = useState(0);
@@ -23,48 +22,57 @@ const CodeforcesCard = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const username = codeforcesCard?.handles?.[0];
+  const proxy = 'https://corsproxy.io/?';
 
   useEffect(() => {
-    if (!codeforcesCard.display || !username) return;
-
     const fetchData = async () => {
-      setLoading(true);
-      setError(null);
-
       try {
-        const [infoRes, statusRes, contestRes] = await Promise.all([
-          axios.get(`https://codeforces.com/api/user.info?handles=${username}`),
-          // axios.get(`https://codeforces.com/api/user.status?handle=${username}`),
-          // axios.get(`https://codeforces.com/api/user.rating?handle=${username}`),
+        setLoading(true);
+
+        const userUrl = `${proxy}https://codeforces.com/api/user.info?handles=${CODEFORCES_USERNAME}`;
+        const statusUrl = `${proxy}https://codeforces.com/api/user.status?handle=${CODEFORCES_USERNAME}`;
+        const contestUrl = `${proxy}https://codeforces.com/api/user.rating?handle=${CODEFORCES_USERNAME}`;
+
+        const [userRes, statusRes, contestRes] = await Promise.all([
+          fetch(userUrl),
+          fetch(statusUrl),
+          fetch(contestUrl),
         ]);
 
-        setUserInfo(infoRes.data.result[0]);
+        const userData = await userRes.json();
+        const statusData = await statusRes.json();
+        const contestData = await contestRes.json();
 
-        const solvedSet = new Set();
-        statusRes.data.result.forEach((sub) => {
-          if (sub.verdict === 'OK') {
-            solvedSet.add(`${sub.problem.contestId}-${sub.problem.index}`);
+        if (userData.status === 'OK') {
+          setUserInfo(userData.result[0]);
+        }
+
+        if (statusData.status === 'OK') {
+          const solvedSet = new Set();
+          for (const submission of statusData.result) {
+            if (submission.verdict === 'OK') {
+              const key = `${submission.problem.contestId}-${submission.problem.index}`;
+              solvedSet.add(key);
+            }
           }
-        });
+          setSolvedCount(solvedSet.size);
+        }
 
-        setSolvedCount(solvedSet.size);
-        setContestInfo(contestRes.data.result);
+        if (contestData.status === 'OK') {
+          setContestInfo(contestData.result);
+        }
+
+        setLoading(false);
       } catch (err) {
-        console.error('❌ Codeforces API Error:', err);
+        console.error('❌ Error fetching Codeforces data:', err);
         setError(err);
+        setLoading(false);
       }
-
-      setLoading(false);
     };
 
     fetchData();
-  }, [username]);
+  }, []);
 
-  // ✅ Display nothing if not visible
-  if (!codeforcesCard.display) return null;
-
-  // ✅ Show loading indicator
   if (loading) {
     return (
       <div className="text-center text-indigo-400 py-10">
@@ -73,7 +81,6 @@ const CodeforcesCard = () => {
     );
   }
 
-  // ✅ Show error if API fails
   if (error) {
     return (
       <p className="text-red-500 text-center py-6">
@@ -100,7 +107,9 @@ const CodeforcesCard = () => {
           className="w-24 h-24 rounded-full border-4 border-indigo-500 shadow-md"
         />
         <div className="text-center sm:text-left">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{userInfo.handle}</h3>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+            {userInfo.handle}
+          </h3>
           <div className={`inline-block mt-2 px-3 py-1 text-sm font-semibold text-white rounded-full ${colorClass}`}>
             {userInfo.rank?.toUpperCase() || 'UNRATED'}
           </div>
@@ -132,7 +141,9 @@ const CodeforcesCard = () => {
         {contestInfo.length > 0 && (
           <div className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow sm:col-span-2">
             <p className="text-gray-400 text-sm">🕹 Last Contest</p>
-            <p className="text-pink-400 text-xl font-bold">{contestInfo.at(-1)?.contestName}</p>
+            <p className="text-pink-400 text-xl font-bold">
+              {contestInfo.at(-1)?.contestName}
+            </p>
           </div>
         )}
       </div>

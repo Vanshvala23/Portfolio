@@ -361,10 +361,11 @@ const podcastSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
-const codeforcesCard={
-  handles:"VanshVala",
-  display:true
+const codeforcesCard = {
+  display: true,
+  handles: ["VanshVala"]
 };
+
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
