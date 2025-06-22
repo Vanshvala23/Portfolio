@@ -9,9 +9,7 @@
 /coverage
 /build
 
-.env
 
-# misc
 .DS_Store
 .env.local
 .env.development.local
@@ -26,3 +24,8 @@ yarn-error.log*
 public/profile.json
 public/blogs.json
 node_modules
+.env
+.env.development
+.env.test
+.env.production
+./fetch.js

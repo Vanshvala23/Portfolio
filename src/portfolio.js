@@ -362,8 +362,8 @@ const podcastSection = {
 };
 
 const codeforcesCard={
-  display:true,
-  handles:['VanshVala']
+  handles:"VanshVala",
+  display:true
 };
 
 const contactInfo = {

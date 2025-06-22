@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { codeforcesCard } from '../../portfolio'; // ✅ Ensure this is correctly exported
-import './card.scss'; // Optional additional styling
+// import './card.scss'; // Optional additional styling
 
 const rankColors = {
   newbie: 'bg-gray-500',
@@ -35,8 +35,8 @@ const CodeforcesCard = () => {
       try {
         const [infoRes, statusRes, contestRes] = await Promise.all([
           axios.get(`https://codeforces.com/api/user.info?handles=${username}`),
-          axios.get(`https://codeforces.com/api/user.status?handle=${username}`),
-          axios.get(`https://codeforces.com/api/user.rating?handle=${username}`),
+          // axios.get(`https://codeforces.com/api/user.status?handle=${username}`),
+          // axios.get(`https://codeforces.com/api/user.rating?handle=${username}`),
         ]);
 
         setUserInfo(infoRes.data.result[0]);
