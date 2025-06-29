@@ -46,8 +46,8 @@
     position: absolute;
     left: 0;
     width: 100%;
-    height: 6px;
-    background: linear-gradient(90deg, #930dae, #40c9a2);
+    height: 10px;
+    background: linear-gradient(90deg, #930dae, #b52282);
     opacity: 0;
     transition: opacity 0.3s ease;
     filter: blur(12px);
@@ -64,7 +64,7 @@
   }
 
   &:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     border-color: #8021af;
 
     &::before,
