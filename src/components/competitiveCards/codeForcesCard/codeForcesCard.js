@@ -9,7 +9,7 @@ const CodeforcesCard = () => {
         rel="noopener noreferrer"
       >
         <img
-          src="https://codeforces-readme-stats.vercel.app/api/card?username=VanshVala&theme=synthwave&disable_animations=false&show_icons=true&force_username=true"
+          src="https://codeforces-readme-stats.vercel.app/api/card?username=VanshVala&theme=tokyonight&disable_animations=false&show_icons=true&force_username=true"
           alt="Codeforces Profile"
           style={{
             width: "100%",
