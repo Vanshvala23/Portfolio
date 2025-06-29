@@ -1,9 +1,36 @@
+.card-section {
+  padding: 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row; // ensure horizontal layout
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap; // disable wrap so cards stay horizontal
+  overflow-x: auto; // allows horizontal scroll on small screens
+  padding-bottom: 1rem;
+
+  // Optional: Hide scrollbar for aesthetics
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .card-wrapper {
   background-color: #1e1e2f;
   border: 1px solid #2a2a40;
   border-radius: 12px;
   padding: 1.5rem;
-  max-width: 550px;
+  min-width: 300px; // Ensure a consistent card size
+  max-width: 350px;
   width: 100%;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -13,28 +40,28 @@
   position: relative;
   z-index: 1;
 
-  // Horizontal glow outside only
+  // Glow lines (horizontal glow only outside)
   &::before,
   &::after {
     content: "";
     position: absolute;
     left: 10%;
     width: 80%;
-    height: 8px;
+    height: 6px;
     background: linear-gradient(90deg, #6e40c9, #40c9a2);
     opacity: 0;
     transition: opacity 0.3s ease;
     filter: blur(8px);
     z-index: -1;
-    border-radius: 50%;
+    border-radius: 50px;
   }
 
   &::before {
-    top: -10px; // Just outside the top
+    top: -8px;
   }
 
   &::after {
-    bottom: -10px; // Just outside the bottom
+    bottom: -8px;
   }
 
   &:hover {
@@ -57,5 +84,12 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    overflow-x: auto;
   }
 }
