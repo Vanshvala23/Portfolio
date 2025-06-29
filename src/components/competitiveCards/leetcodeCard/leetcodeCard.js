@@ -11,7 +11,7 @@ export default function LeetCodeCard() {
         rel="noopener noreferrer"
       >
         <img
-          src="https://leetcard.jacoblin.cool/vanshvala01?theme=nord"
+          src="https://leetcard.jacoblin.cool/vanshvala01?ext=heatmap"
           alt="LeetCode Stats"
           className="leetcode-card"
         />
