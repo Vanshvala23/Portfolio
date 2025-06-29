@@ -27,11 +27,11 @@
 .card-wrapper {
   position: relative;
   background-color: #1e1e2f;
-  border: 2px solid #2a2a40;
-  border-radius: 12px;
+  border: 2px solid #1c0229;
+  border-radius: 14px;
   padding: 2rem 1.5rem; // Slightly increased padding for better spacing
   min-width: 300px;
-  max-width: 340px;
+  max-width: 500px;
   width: 100%;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -47,10 +47,10 @@
     left: 0;
     width: 100%;
     height: 6px;
-    background: linear-gradient(90deg, #6e40c9, #40c9a2);
+    background: linear-gradient(90deg, #930dae, #40c9a2);
     opacity: 0;
     transition: opacity 0.3s ease;
-    filter: blur(8px);
+    filter: blur(12px);
     z-index: -1;
     border-radius: 50px;
   }
@@ -65,7 +65,7 @@
 
   &:hover {
     transform: translateY(-6px);
-    border-color: #6e40c9;
+    border-color: #8021af;
 
     &::before,
     &::after {
