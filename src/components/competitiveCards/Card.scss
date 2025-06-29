@@ -11,29 +11,27 @@
 
 .card-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start; // Cards align from left
+  justify-content: center; // Center the cards horizontally
   gap: 2rem;
+  flex-wrap: wrap; // Allow wrapping on large screens
   overflow-x: auto;
   padding-bottom: 1rem;
+  scroll-behavior: smooth;
 
   // Hide scrollbar for WebKit (Chrome, Safari)
   &::-webkit-scrollbar {
     display: none;
   }
-
-  // Optional: Smooth scroll
-  scroll-behavior: smooth;
 }
 
 .card-wrapper {
-  position: relative; // Needed for ::before & ::after glow
+  position: relative;
   background-color: #1e1e2f;
-  border: 1px solid #2a2a40;
+  border: 2px solid #2a2a40;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem; // Slightly increased padding for better spacing
   min-width: 300px;
-  max-width: 350px;
+  max-width: 340px;
   width: 100%;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -42,7 +40,6 @@
   align-items: center;
   z-index: 0;
 
-  // Glow lines (top & bottom only)
   &::before,
   &::after {
     content: "";
@@ -53,21 +50,21 @@
     background: linear-gradient(90deg, #6e40c9, #40c9a2);
     opacity: 0;
     transition: opacity 0.3s ease;
-    filter: blur(10px);
+    filter: blur(8px);
     z-index: -1;
     border-radius: 50px;
   }
 
   &::before {
-    top: -10px; // Glow above card
+    top: -10px;
   }
 
   &::after {
-    bottom: -10px; // Glow below card
+    bottom: -10px;
   }
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     border-color: #6e40c9;
 
     &::before,
@@ -79,24 +76,34 @@
   h3 {
     color: #fff;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem; // Slightly larger
   }
 
   img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
   }
 }
 
 @media (max-width: 768px) {
   .card-container {
-    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     overflow-x: auto;
     gap: 1rem;
   }
 
   .card-wrapper {
     min-width: 260px;
+    padding: 1.5rem 1rem;
   }
 }
