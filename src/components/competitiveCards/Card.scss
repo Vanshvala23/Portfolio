@@ -11,25 +11,28 @@
 
 .card-container {
   display: flex;
-  flex-direction: row; // ensure horizontal layout
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start; // Cards align from left
   gap: 2rem;
-  flex-wrap: nowrap; // disable wrap so cards stay horizontal
-  overflow-x: auto; // allows horizontal scroll on small screens
+  overflow-x: auto;
   padding-bottom: 1rem;
 
-  // Optional: Hide scrollbar for aesthetics
+  // Hide scrollbar for WebKit (Chrome, Safari)
   &::-webkit-scrollbar {
     display: none;
   }
+
+  // Optional: Smooth scroll
+  scroll-behavior: smooth;
 }
 
 .card-wrapper {
+  position: relative; // Needed for ::before & ::after glow
   background-color: #1e1e2f;
   border: 1px solid #2a2a40;
   border-radius: 12px;
   padding: 1.5rem;
-  min-width: 300px; // Ensure a consistent card size
+  min-width: 300px;
   max-width: 350px;
   width: 100%;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
@@ -37,31 +40,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  z-index: 1;
+  z-index: 0;
 
-  // Glow lines (horizontal glow only outside)
+  // Glow lines (top & bottom only)
   &::before,
   &::after {
     content: "";
     position: absolute;
-    left: 10%;
-    width: 80%;
+    left: 0;
+    width: 100%;
     height: 6px;
     background: linear-gradient(90deg, #6e40c9, #40c9a2);
     opacity: 0;
     transition: opacity 0.3s ease;
-    filter: blur(8px);
+    filter: blur(10px);
     z-index: -1;
     border-radius: 50px;
   }
 
   &::before {
-    top: -8px;
+    top: -10px; // Glow above card
   }
 
   &::after {
-    bottom: -8px;
+    bottom: -10px; // Glow below card
   }
 
   &:hover {
@@ -91,5 +93,10 @@
   .card-container {
     flex-direction: row;
     overflow-x: auto;
+    gap: 1rem;
+  }
+
+  .card-wrapper {
+    min-width: 260px;
   }
 }
