@@ -4,7 +4,7 @@ const CodeforcesCard = () => {
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
       <a
-        href="https://codeforces.com/profile/ToTo__"
+        href="https://codeforces.com/profile/Vansh_Vala"
         target="_blank"
         rel="noopener noreferrer"
       >
