@@ -151,24 +151,25 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Full Stack developer",
+      role: "Full Stack Developer",
       company: "MrLoggage",
       companylogo: require('./assets/images/Mr Loggage[1].png'),
       date: "June 2024 – Aug 2025",
       desc: "Web Developer and Server side developer"
     },
     {
-      role:"MERN Stack Web Developer",
-      company:"Amdox technologies",
-      companylogo:require('./assets/images/logo.png'),
-      date:"November 2025- Present",
-      role:"MERN Stack developer"
+      role: "MERN Stack Web Developer",
+      company: "Amdox Technologies",
+      companylogo: require('./assets/images/logo.png'),
+      date: "November 2025 – Present",
+      desc: "MERN Stack developer"
     },
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
