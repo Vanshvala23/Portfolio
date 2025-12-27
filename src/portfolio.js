@@ -60,7 +60,7 @@ const skillsSection = {
       "⚡ Develop highly interactive Front end / User Interfaces for your web applications"
     ),
     emoji("⚡ Progressive Discord Chat and Music bot using JavaScript"),
-    emoji("🔥 Event Handler of LeetCode with my buddies."),
+    emoji("🔥 Event Handler of LeetCode and Codeforces."),
   ],
 
   softwareSkills: [
@@ -159,6 +159,13 @@ const workExperiences = {
       companylogo: require('./assets/images/Mr Loggage[1].png'),
       date: "June 2024 – Aug 2025",
       desc: "Web Developer and Server side developer"
+    },
+    {
+      role:"MERN Stack Web Developer",
+      company:"Amdox technologies",
+      companylogo:require('./assets/images/logo.png'),
+      date:"November 2025- Present",
+      role:"MERN Stack developer"
     },
   ]
 };
