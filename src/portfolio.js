@@ -134,11 +134,11 @@ const techStack = {
   experience: [
     {
       Stack: "Cyber-Security",
-      progressPercentage: "45%"
+      progressPercentage: "75%"
     },
     {
       Stack: "Backend",
-      progressPercentage: "80%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Frontend",
@@ -167,6 +167,13 @@ const workExperiences = {
       date: "November 2025 – Present",
       desc: "MERN Stack developer"
     },
+    {
+      role:"Software Developer Intern",
+      company:"Resobrand.in",
+      companylogo:require('./assets/images/resobrand.jpg'),
+      date:"January 2026 - Present",
+      desc:"Software Developer"
+    }
   ]
 };
 
