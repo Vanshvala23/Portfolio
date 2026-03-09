@@ -134,11 +134,11 @@ const techStack = {
   experience: [
     {
       Stack: "Cyber-Security",
-      progressPercentage: "75%"
+      progressPercentage: "85%"
     },
     {
       Stack: "Backend",
-      progressPercentage: "90%"
+      progressPercentage: "94%"
     },
     {
       Stack: "Frontend",
@@ -159,13 +159,6 @@ const workExperiences = {
       companylogo: require('./assets/images/Mr Loggage[1].png'),
       date: "June 2024 – Aug 2025",
       desc: "Web Developer and Server side developer"
-    },
-    {
-      role: "MERN Stack Web Developer",
-      company: "Amdox Technologies",
-      companylogo: require('./assets/images/logo.png'),
-      date: "November 2025 – Present",
-      desc: "MERN Stack developer"
     },
     {
       role:"Software Developer Intern",
@@ -289,19 +282,19 @@ const achievementSection = {
         }
       ]
     },
-    // {
-    //   title: "Discord Developer",
-    //   subtitle:
-    //     "Developed a Discord chat bot that can talk with him and added an admin system.",
-    //   image: require("./assets/images/Discord.png"),
-    //   imageAlt: "Google Assistant Action Logo",
-    //   footerLink: [
-    //     {
-    //       name: "View Discord Developer project",
-    //       url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_explainations-activity-7152620765664706560-j4Cp?utm_source=share&utm_medium=member_desktop"
-    //     }
-    //   ]
-    // },
+    {
+      title: "Discord Developer",
+      subtitle:
+        "Developed a Discord chat bot that can talk with him and added an admin system.",
+      image: require("./assets/images/Discord.png"),
+      imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        {
+          name: "View Discord Developer project",
+          url: "https://www.linkedin.com/posts/vansh-vala-ba2ba3249_explainations-activity-7152620765664706560-j4Cp?utm_source=share&utm_medium=member_desktop"
+        }
+      ]
+    },
 
     // {
     //   title: "Discord Music app Developer ",
