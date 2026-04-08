@@ -298,7 +298,7 @@ const achievementSection = {
     {
   title: "Published Research Paper",
   subtitle:
-    "Authored and published a research paper on FluxCRM, a scalable full-stack CRM system. Designed modular backend architecture using NestJS, implemented secure JWT authentication, and optimized API performance. Demonstrated efficient handling of concurrent requests and low latency under load.",
+    "Authored and published a research paper on FluxCRM, a scalable full-stack CRM system. Designed modular backend architecture using NestJS, implemented secure JWT authentication, and optimized API performance.",
   image: require("./assets/images/research.png"),
   imageAlt: "Research Publication",
   footerLink: [
